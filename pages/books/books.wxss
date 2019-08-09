@@ -1,0 +1,10 @@
+/* pages/books/books.wxss */
+.bshow{
+   text-align: center;
+   color:#afaeae;
+   margin-top:150rpx;
+}
+.bshow image{
+   width:450rpx;
+   height:350rpx;
+}

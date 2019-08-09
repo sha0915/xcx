@@ -1,0 +1,6 @@
+{
+   "navigationBarTitleText": "查找结果",
+   "usingComponents": {
+      "van-rate": "/vant-weapp/rate/index"
+   }
+}

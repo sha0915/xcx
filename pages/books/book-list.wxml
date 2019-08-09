@@ -1,0 +1,25 @@
+<!--pages/books/book-list.wxml-->
+<text class='value'>搜索：{{value}}</text>
+<view  wx:for="{{books}}" wx:key="index">
+   <view class="books">
+   <!--左侧图片-->
+   <image src="{{item.image}}" lazy-load="true" class="list_img"></image>
+   <!--右侧详情-->
+   <view class="list_right">
+      <!--图书title-->
+      <view class="list_title">{{item.title}}</view>
+      <!--图书评分-->
+      <view class="list_rate">
+         <van-rate readonly value="{{item.rating.average*0.5}}" size="10" allow-half color="#f44" void-color="#eee" 
+            void-icon="star"/> {{item.rating.average}}（{{item.rating.numRaters}}人评价） </view>
+      <!--作者信息-->
+      <view> 作者：{{item.author[0]}}  </view>
+      <!--出版社-->
+      <view> 出版社：{{item.publisher}} </view>
+      <!--出版年-->
+      <view> 出版年：{{item.pubdate}} </view>
+      <!--查看详情/遮罩层-->
+      <view class="list_shadow" bindtap='goDetails' id="{{item.id}}"></view> 
+   </view>
+   </view>
+</view>

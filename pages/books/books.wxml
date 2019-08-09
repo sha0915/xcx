@@ -1,0 +1,9 @@
+<van-search value="{{ value }}" placeholder="请输入搜索关键词" use-action-slot shape="round" bind:focus="onBookFocus" bind:blur="onBookBlur" bind:search="onSearch">
+</van-search>
+<view class="bshow">
+   <image src='/images/book/book.png'></image>
+   <view style='font-size:20px;margin-bottom:8rpx'>豆瓣读书</view>
+   <view style='font-size:14px;'>豆 瓣 邀 您 来 鉴 书</view>
+</view> 
+
+
